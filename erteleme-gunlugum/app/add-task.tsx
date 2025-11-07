@@ -117,6 +117,7 @@ export default function AddTaskScreen() {
               value={deadline || new Date()}
               mode="date"
               display={Platform.OS === 'ios' ? 'spinner' : 'default'}
+              locale="tr_TR"
               onChange={(event: any, selectedDate?: Date) => {
                 setShowDatePicker(Platform.OS === 'ios');
                 if (selectedDate) {
